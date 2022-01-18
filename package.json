@@ -1,0 +1,21 @@
+{
+  "name": "dialog-view",
+  "version": "0.2.3-beta.5",
+  "description": "抛弃mixin的方式使用弹窗",
+  "main": "install.js",
+  "scripts": {
+    "pub": "cnpm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "mini-router": "latest"
+  },
+  "keywords": [
+    "element-ui",
+    "dialog",
+    "vue",
+    "vue-dialog"
+  ],
+  "author": "yuwei",
+  "license": "ISC"
+}

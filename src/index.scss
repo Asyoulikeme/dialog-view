@@ -1,0 +1,72 @@
+.el-dialog__wrapper{
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+::v-deep .el-dialog.is-fullscreen{
+  margin-top: 0 !important;
+}
+::v-deep .el-dialog {
+    *border: 1px solid red;
+    transition: all .2s ease-in-out;
+    height: calc(100vh - 20vh);
+    margin-top: 10vh;
+    position: relative;
+    box-sizing: border-box;
+  }
+  ::v-deep .el-dialog__title {
+    color: #666;
+  }
+
+  ::v-deep .el-dialog__body {
+    padding: 20px;
+    height: calc(100% - 45px);
+    box-sizing: border-box;
+    *border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  ::v-deep .el-dialog__title{
+    font-size: 15px;
+  }
+  ::v-deep .el-dialog__header {
+    min-height: 45px ;
+
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    // &::before{
+    //   content: "";
+    //   margin-right: 10px !important;
+    //   width: 4px;
+    //   height: 22px;
+    //   background: #438aef;
+    //   display: inline-block;
+    //   vertical-align: middle;
+    //   border-radius: 1px;
+    // }
+  }
+  ::v-deep .svg-btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    transform: translateY(70%);
+    &:hover {
+      cursor: pointer;
+    }
+    svg:hover path {
+      fill: #3a8ee6 !important;
+    }
+  }
+  ::v-deep .el-dialog__headerbtn {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: translateX(-100%);
+  }
